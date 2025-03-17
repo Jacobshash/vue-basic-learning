@@ -60,6 +60,7 @@
             // 需要重复调用的基础功能
             // 需要函数提升特性的场景
             // 适合作为模块的主要功能函数
+            console.log("hideModal",this);
             document.querySelector('.modal').style.display = 'none';
             document.querySelector('.overlay').style.display = 'none';
         }
@@ -69,6 +70,7 @@
             // 需要继承外层this的场景（如Vue方法）
             // 单行简单操作（可简写为：const fn = () => doSomething()）
             // 需要作为匿名函数传递时
+            console.log("showModal222",this);
             document.querySelector('.modal').style.display = 'block';
             document.querySelector('.overlay').style.display = 'block';
         }
@@ -78,6 +80,7 @@
             // 复杂函数需要明确函数名便于调试
             // 需要函数自调用的场景（立即执行函数）
             // 需要保持函数名局部可见的场景
+            console.log("showModal3" , this);
             document.querySelector('.modal').style.display = 'block';
             document.querySelector('.overlay').style.display = 'block';
         }
